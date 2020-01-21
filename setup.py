@@ -22,4 +22,5 @@ setuptools.setup(
     install_requires=[
         "matplotlib",
     ],
+    data_files=[('styles', ['styles/pynt_style'])],
 )
