@@ -2,9 +2,17 @@ from os import path
 import matplotlib as mpl
 from matplotlib import pyplot as plt
 
-__all__ = ["set_style", "use_tex", "set_fontsize"]
-_STYLE_DIR = path.abspath(path.join(path.dirname(__file__), 'styles'))
+__all__ = ['set_style', 'use_tex', 'set_fontsize']
+_ROOT_DIR = path.abspath(path.dirname(__file__))
+_STYLE_DIR =path.join(_ROOT_DIR, 'styles')
 
+def _parse_preamble(path):
+    """
+    Parse preamble at path.
+    """
+    with open(path, "r") as f:
+        preamble = f.read().split('\n')
+    return preamble
 
 def set_style(style="pynt"):
     """
@@ -16,19 +24,21 @@ def set_style(style="pynt"):
         raise ValueError(f"{style} ist not a Pynt style") from e
 
 
-def use_tex(tex=True, font=None):
+def use_tex(tex=True, preamble=True):
     """
-    Turn on (or off) useage of TeX and set font. If font or tex is False,
-    the font will not be changed.
+    Turn on (or off) useage of TeX.
+
+    preamble can be True (Pynt default preamble), a path to a preamble,
+    a string (or list) version of the preamble or False (no preamble).
     """
-    # if font is None:
-    #     if tex:
-    #         font = {'family': 'serif', 'serif': ['DejaVu Sans']}
-    #     else:
-    #         font = {}
-    # if font ist not False:
-    #     mpl.rc('font', **font)
     mpl.rc('text', usetex=tex)
+    if preamble is False:
+        return
+    elif preamble is True:
+        preamble = _parse_preamble(path.join(_ROOT_DIR, 'preamble.tex'))
+    elif path.isfile(preamble):
+        preamble = _parse_preamble(preamble)
+    mpl.rcParams['text.latex.preamble'] = preamble
 
 
 def set_fontsize(fontsize):
