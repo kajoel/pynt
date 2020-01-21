@@ -1,1 +1,1 @@
-from _settings import *
+from ._settings import *
