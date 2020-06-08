@@ -22,5 +22,5 @@ setuptools.setup(
     install_requires=[
         "matplotlib",
     ],
-    package_data={"pynt": ["styles/*"]}
+    package_data={"pynt": ["styles/*", "preamble.tex"]}
 )

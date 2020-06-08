@@ -4,7 +4,8 @@ from matplotlib import pyplot as plt
 
 __all__ = ['set_style', 'use_tex', 'set_fontsize']
 _ROOT_DIR = path.abspath(path.dirname(__file__))
-_STYLE_DIR =path.join(_ROOT_DIR, 'styles')
+_STYLE_DIR = path.join(_ROOT_DIR, 'styles')
+
 
 def _parse_preamble(path):
     """
@@ -13,6 +14,7 @@ def _parse_preamble(path):
     with open(path, "r") as f:
         preamble = f.read().split('\n')
     return preamble
+
 
 def set_style(style="pynt"):
     """
