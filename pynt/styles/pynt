@@ -86,7 +86,7 @@ font.stretch        : normal
 ## relative to font.size, using the following values: xx-small, x-small,
 ## small, medium, large, x-large, xx-large, larger, or smaller
 font.size           : 10.0
-font.serif          : CMU Serif, Sylfaen, DejaVu Serif
+font.serif          : Latin Modern Roman, Sylfaen, DejaVu Serif
 
 #### TEXT
 ## text properties used by text.Text.  See
