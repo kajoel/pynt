@@ -43,7 +43,7 @@ def use_tex(tex=True, preamble=False):
     mpl.rcParams['text.latex.preamble'] = preamble
 
 
-def set_fontsize(fontsize):
+def set_fontsize(fontsize=10):
     """
     Set Pyplot fontsize.
     """
