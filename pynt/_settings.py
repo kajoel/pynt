@@ -26,7 +26,7 @@ def set_style(style="pynt"):
         raise ValueError(f"{style} ist not a Pynt style") from e
 
 
-def use_tex(tex=True, preamble=True):
+def use_tex(tex=True, preamble=False):
     """
     Turn on (or off) useage of TeX.
 
