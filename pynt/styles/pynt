@@ -86,7 +86,7 @@ font.stretch        : normal
 ## relative to font.size, using the following values: xx-small, x-small,
 ## small, medium, large, x-large, xx-large, larger, or smaller
 font.size           : 10.0
-font.serif          : Computer Modern Roman, Sylfaen, DejaVu Serif
+font.serif          : CMU Serif, Sylfaen, DejaVu Serif
 
 #### TEXT
 ## text properties used by text.Text.  See
@@ -107,7 +107,7 @@ mathtext.bf  : serif:bold
 mathtext.sf  : serif
 mathtext.fontset : cm
 mathtext.fallback_to_cm : True
-mathtext.default : cm
+#mathtext.default : it
 
 #### AXES
 ## default face and edge color, default tick sizes,
