@@ -86,7 +86,7 @@ font.stretch        : normal
 ## relative to font.size, using the following values: xx-small, x-small,
 ## small, medium, large, x-large, xx-large, larger, or smaller
 font.size           : 10.0
-font.serif          : CMU Serif, Sylfaen, DejaVu Serif
+font.serif          : Latin Modern Roman, Sylfaen, DejaVu Serif
 
 #### TEXT
 ## text properties used by text.Text.  See
@@ -155,7 +155,8 @@ axes.titleweight    : normal  ## font weight of title
 #axes.unicode_minus  : True    ## use unicode for the minus symbol
                                ## rather than hyphen.  See
                                ## http://en.wikipedia.org/wiki/Plus_and_minus_signs#Character_codes
-#axes.prop_cycle    : cycler('color', ['1f77b4', 'ff7f0e', '2ca02c', 'd62728', '9467bd', '8c564b', 'e377c2', '7f7f7f', 'bcbd22', '17becf'])
+axes.prop_cycle    : cycler('color', ['004488', '66CCEE', 'EE7733', '2ca02c', 'd62728', '9467bd', '8c564b', 'e377c2', '7f7f7f', 'bcbd22', '17becf'])
+#axes.prop_cycle    : cycler('color', ['1f77b4', 'ff7f0e', '2ca02c', 'd62728', '9467bd', '8c564b', 'e377c2', '7f7f7f', 'bcbd22', '17becf']) #DEFAULT
                       ## color cycle for plot lines  as list of string
                       ## colorspecs: single letter, long name, or web-style hex
 					  ## Note the use of string escapes here ('1f77b4', instead of 1f77b4)
@@ -293,7 +294,7 @@ figure.constrained_layout.use: True ## When True, automatically make plot
 #### IMAGES
 #image.aspect : equal             ## equal | auto | a number
 #image.interpolation  : nearest   ## see help(imshow) for options
-#image.cmap   : viridis           ## A colormap name, gray etc...
+image.cmap   : viridis           ## A colormap name, gray etc...
 #image.lut    : 256               ## the size of the colormap lookup table
 #image.origin : upper             ## lower | upper
 #image.resample  : True
