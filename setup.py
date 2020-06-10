@@ -5,7 +5,7 @@ with open("README.md", "r") as f:
 
 setuptools.setup(
     name="pynt",
-    version="0.0.1",
+    version="0.1.0",
     author="Joel Karlsson, Carl Eklind",
     author_email="joelkarlsson97@gmail.com, carleklind@outlook.com",
     description="Settings for Matplotlib.",
