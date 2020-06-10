@@ -1,5 +1,6 @@
 # pynt
-Settings for Matplotlib
+Fancy settings for Matplotlib. 
+Authors: Joel Karlsson & Carl Eklind
 
 ## Installation
 `pip install git+https://github.com/kajoel/pynt`
