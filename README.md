@@ -1,5 +1,6 @@
 # pynt
 Fancy settings for Matplotlib. 
+
 Authors: Joel Karlsson & Carl Eklind
 
 ## Installation
