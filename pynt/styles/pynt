@@ -106,7 +106,7 @@ mathtext.it  : serif:italic
 mathtext.bf  : serif:bold
 mathtext.sf  : serif
 mathtext.fontset : cm
-mathtext.fallback_to_cm : True
+mathtext.fallback : cm
 #mathtext.default : it
 
 #### AXES
@@ -116,7 +116,7 @@ mathtext.fallback_to_cm : True
 #axes.facecolor      : white   ## axes background color
 #axes.edgecolor      : black   ## axes edge color
 axes.linewidth      : 0.7     ## edge linewidth
-axes.grid           : True   ## display grid or not
+# axes.grid           : True   ## display grid or not
 axes.grid.axis      : both    ## which axis the grid should apply to
 #axes.grid.which     : major   ## gridlines at major, minor or both ticks
 axes.titlesize      : medium   ## fontsize of the axes title

@@ -40,7 +40,7 @@ def use_tex(tex=True, preamble=False):
         preamble = _parse_preamble(path.join(_ROOT_DIR, 'preamble.tex'))
     elif path.isfile(preamble):
         preamble = _parse_preamble(preamble)
-    mpl.rcParams['text.latex.preamble'] = preamble
+    mpl.rcParams['text.latex.preamble'] = ' '.join(preamble)
 
 
 def set_fontsize(fontsize=10):

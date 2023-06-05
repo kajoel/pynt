@@ -5,7 +5,7 @@ with open("README.md", "r") as f:
 
 setuptools.setup(
     name="pynt",
-    version="0.1.0",
+    version="0.1.1",
     author="Joel Karlsson, Carl Eklind",
     author_email="joelkarlsson97@gmail.com, carleklind@outlook.com",
     description="Settings for Matplotlib.",
@@ -20,7 +20,7 @@ setuptools.setup(
     ],
     python_requires=">=3.6",
     install_requires=[
-        "matplotlib",
+        "matplotlib>=3.3.0",
     ],
     package_data={"pynt": ["styles/*", "preamble.tex"]}
 )
